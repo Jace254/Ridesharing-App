@@ -1,0 +1,9 @@
+fragment Post_Data on Post {
+  id
+  createdAt
+  updatedAt
+  title
+  text
+  points
+  creatorId
+}

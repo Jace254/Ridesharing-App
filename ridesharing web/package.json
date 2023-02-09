@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "build:mobile": "next build && next export && cap sync",
+    "gen": "graphql-codegen --config codegen.yml",
+    "init-mobile": "cap init --web-dir=out",
+    "android:add": "cap add android",
+    "android:open": "cap open android",
+    "android:run": "cap run android",
+    "sync": "cap sync"
+  },
+  "dependencies": {
+    "@capacitor-community/http": "^1.4.1",
+    "@capacitor/android": "^4.3.0",
+    "@capacitor/app": "^4.1.0",
+    "@capacitor/cli": "^4.3.0",
+    "@capacitor/core": "^4.3.0",
+    "@capacitor/ios": "^4.3.0",
+    "@chakra-ui/icons": "^2.0.2",
+    "@chakra-ui/react": "^2.2.1",
+    "@chakra-ui/theme-tools": "^2.0.2",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.9.0",
+    "@urql/exchange-graphcache": "^5.0.1",
+    "formik": "^2.2.9",
+    "framer-motion": "^6.3.0",
+    "graphql": "^16.6.0",
+    "next": "latest",
+    "next-urql": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "sharp": "^0.31.0",
+    "urql": "^3.0.3",
+    "wonka": "^6.1.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "2.12.1",
+    "@graphql-codegen/typescript": "2.7.3",
+    "@graphql-codegen/typescript-operations": "2.5.3",
+    "@graphql-codegen/typescript-urql": "^3.7.0",
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "react-icons": "^4.4.0",
+    "typescript": "^4.7.2"
+  }
+}
